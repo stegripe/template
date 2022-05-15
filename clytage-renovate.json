@@ -16,14 +16,6 @@
                 "automerge": true
             },
             {
-                "matchPackagePatterns": ["ansi-regex"],
-                "allowedVersions": "^5"
-            },
-            {
-                "matchPackagePatterns": ["@types/node-fetch"],
-                "allowedVersions": "^2"
-            },
-            {
                 "matchDepTypes": ["engines"],
                 "enabled": false
             }
