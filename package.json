@@ -1,7 +1,7 @@
 {
     "name": "project-template",
     "version": "1.0.0",
-    "description": "A template to generate configured project base for Clytage.",
+    "description": "A template to generate well-configured project base for Clytage.",
     "main": "dist/index.js",
     "scripts": {
         "build": "npm run lint && npm run compile",

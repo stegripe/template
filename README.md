@@ -1,3 +1,3 @@
 # project-base
 
-A template to generate configured project base for Clytage.
+A template to generate well-configured project base for Clytage.
