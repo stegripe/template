@@ -4,7 +4,11 @@
     "description": "A template to generate configured project base for Clytage.",
     "main": "dist/index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "npm run lint && npm run compile",
+        "compile": "tsc --build tsconfig.json",
+        "lint": "eslint . --ignore-path .gitignore --ext .ts",
+        "lint:fix": "eslint . --ignore-path .gitignore --ext .ts --fix",
+        "start": "node --es-module-specifier-resolution=node dist/main"
     },
     "repository": {
         "type": "git",
