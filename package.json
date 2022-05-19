@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "A template to generate well-configured project base for Clytage.",
     "main": "dist/index.js",
+    "type": "module",
     "scripts": {
         "build": "npm run lint && npm run compile",
         "compile": "tsc --build tsconfig.json",
