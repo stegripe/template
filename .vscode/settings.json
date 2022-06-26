@@ -1,5 +1,4 @@
 {
     "files.eol": "\n",
-    "typescript.tsdk": "node_modules/typescript/lib",
-    "typescript.preferences.importModuleSpecifierEnding": "js"
+    "typescript.tsdk": "node_modules/typescript/lib"
 }
