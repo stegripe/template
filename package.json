@@ -32,11 +32,11 @@
     },
     "devDependencies": {
         "@clytage-pkg/eslint-config": "^2.0.0",
-        "@types/node": "^18.16.12",
+        "@types/node": "^18.16.13",
         "@typescript-eslint/eslint-plugin": "^5.59.6",
         "@typescript-eslint/parser": "^5.59.6",
         "eslint": "^8.40.0",
-        "rimraf": "^5.0.0",
+        "rimraf": "^5.0.1",
         "typescript": "^5.0.4"
     }
 }
