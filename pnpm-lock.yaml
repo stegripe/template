@@ -5,9 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
-  '@clytage-pkg/eslint-config':
-    specifier: ^2.0.0
-    version: 2.0.0(@eslint/js@8.44.0)(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(typescript@5.1.6)
+  '@clytage/eslint-config':
+    specifier: ^3.0.1
+    version: 3.0.1(@eslint/js@8.44.0)(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(typescript@5.1.6)
   '@types/node':
     specifier: ^18.16.19
     version: 18.16.19
@@ -34,13 +34,13 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /@clytage-pkg/eslint-config@2.0.0(@eslint/js@8.44.0)(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-57Z6De6tLSdB5sRYsyXJXepTIivDSW0gb2q01TqjU5cUlX68zuPR8cgRB/jlSeF0TZZKemi+zzA5nJUH3f1naw==}
+  /@clytage/eslint-config@3.0.1(@eslint/js@8.44.0)(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint@8.44.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-vSxaKElSjPs7jLu7qTP4K14P73UNKU3TPme2jZpr8iJ/UE20WNq2Xdv9sruCWNRc1sKd6xWEiABUtTG9nD/Tbw==}
     peerDependencies:
-      '@eslint/js': ^8.38.0
-      '@typescript-eslint/eslint-plugin': '>=5.57.1'
-      '@typescript-eslint/parser': '>=5.57.1'
-      eslint: '>=8.38.0'
+      '@eslint/js': ^8.44.0
+      '@typescript-eslint/eslint-plugin': '>=6.0.0'
+      '@typescript-eslint/parser': '>=6.0.0'
+      eslint: '>=8.44.0'
       typescript: '>=3.3.1 <6.0.0'
     peerDependenciesMeta:
       '@typescript-eslint/eslint-plugin':
