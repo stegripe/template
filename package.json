@@ -14,14 +14,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Clytage/template.git"
+        "url": "git+https://github.com/clytage/template.git"
     },
     "author": "Clytage <support@clytage.org>",
     "license": "BSD-3-Clause",
     "bugs": {
-        "url": "https://github.com/Clytage/template/issues"
+        "url": "https://github.com/clytage/template/issues"
     },
-    "homepage": "https://github.com/Clytage/template#readme",
+    "homepage": "https://github.com/clytage/template#readme",
     "engines": {
         "node": ">=16.6.0",
         "npm": ">=7.0.0"
