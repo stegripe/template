@@ -1,79 +1,26 @@
-const hey = [
-    73,
-    102,
-    32,
-    121,
-    111,
-    117,
-    39,
-    114,
-    101,
-    32,
-    115,
-    101,
-    101,
-    105,
-    110,
-    103,
-    32,
-    116,
-    104,
-    105,
-    115,
-    32,
-    109,
-    101,
-    115,
-    115,
-    97,
-    103,
-    101,
-    44,
-    32,
-    116,
-    104,
-    97,
-    116,
-    32,
-    109,
-    101,
-    97,
-    110,
-    115,
-    32,
-    121,
-    111,
-    117,
-    39,
-    114,
-    101,
-    32,
-    114,
-    101,
-    97,
-    100,
-    121,
-    32,
-    116,
-    111,
-    32,
-    99,
-    114,
-    101,
-    97,
-    116,
-    101,
-    32,
-    97,
-    32,
-    112,
-    114,
-    111,
-    106,
-    101,
-    99,
-    116,
-    33
-];
+import { prefix } from "./constants/config.js";
+import { BotClient } from "./structures/BotClient.js";
 
-console.log(hey.map(x => String.fromCharCode(x)).join(""));
+const client = new BotClient({
+    fetchPrefix() { // This could be async and also take "msg" params.
+        return prefix;
+    }
+});
+
+void client.login();
+
+process.on("warning", warn => client.logger.warn(warn, "NODEJS_WARNING:"));
+process.on("exit", code => client.logger.info(`NodeJS process exited with code ${code}`));
+process.on("unhandledRejection", e => {
+    if (e instanceof Error) {
+        client.logger.error(e);
+    } else {
+        // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
+        client.logger.error(Error(`PromiseError: ${e}`));
+    }
+});
+
+process.on("uncaughtException", e => {
+    client.logger.fatal(e);
+    process.exit(1);
+});
