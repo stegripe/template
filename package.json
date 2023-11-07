@@ -1,27 +1,27 @@
 {
-    "name": "katheryne",
-    "version": "0.0.0",
-    "description": "A useful WhatsApp bot.",
+    "name": "template",
+    "version": "1.0.0",
+    "description": "A template to generate well-configured project base for Clytage.",
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
-        "build": "pnpm run lint && pnpm run compile",
+        "build": "npm run lint && npm run compile",
         "compile": "tsc --build tsconfig.json",
         "lint": "eslint . --ignore-path .gitignore --ext .ts",
-        "lint:fix": "pnpm run lint -- --fix",
+        "lint:fix": "npm run lint -- --fix",
         "start": "node --es-module-specifier-resolution=node .",
-        "start:dev": "rimraf ./dist && pnpm run compile && pnpm start"
+        "start:dev": "rimraf ./dist && npm run compile && npm start"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/ZenShibata/katheryne.git"
+        "url": "git+https://github.com/clytage/template.git"
     },
-    "author": "Zen Shibata <zen@clytage.org>",
+    "author": "Clytage <admin@clytage.org>",
     "license": "AGPL-3.0",
     "bugs": {
-        "url": "https://github.com/ZenShibata/katheryne/issues"
+        "url": "https://github.com/clytage/template/issues"
     },
-    "homepage": "https://github.com/ZenShibata/katheryne#readme",
+    "homepage": "https://github.com/clytage/template#readme",
     "engines": {
         "node": ">=16.6.0",
         "npm": ">=7.0.0"
@@ -32,27 +32,11 @@
     },
     "devDependencies": {
         "@clytage/eslint-config": "^3.0.1",
-        "@types/node": "^20.8.10",
-        "@typescript-eslint/eslint-plugin": "^6.9.1",
-        "@typescript-eslint/parser": "^6.9.1",
-        "eslint": "^8.52.0",
+        "@types/node": "^18.18.5",
+        "@typescript-eslint/eslint-plugin": "^6.4.1",
+        "@typescript-eslint/parser": "^6.4.1",
+        "eslint": "^8.47.0",
         "rimraf": "^5.0.5",
-        "typescript": "^5.2.2"
-    },
-    "dependencies": {
-        "@discordjs/collection": "^1.5.3",
-        "@hapi/boom": "^10.0.1",
-        "@nezuchan/decorators": "^0.1.0",
-        "@sapphire/lexure": "^1.1.5",
-        "@sapphire/pieces": "^3.7.0",
-        "@sapphire/result": "^2.6.4",
-        "@sapphire/time-utilities": "^1.7.10",
-        "@sapphire/utilities": "^3.13.0",
-        "@whiskeysockets/baileys": "^6.5.0",
-        "pino": "^8.16.1",
-        "pino-loki": "^2.1.3",
-        "pino-pretty": "^10.2.3",
-        "qrcode-terminal": "^0.12.0",
-        "tslib": "^2.6.2"
+        "typescript": "^5.1.6"
     }
 }

@@ -1,3 +1,3 @@
-# katheryne
+# @clytage/template
 
-A useful WhatsApp bot.
+A template to generate well-configured project base for Clytage.

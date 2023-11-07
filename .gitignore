@@ -98,5 +98,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-auth_state/

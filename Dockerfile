@@ -24,8 +24,8 @@ RUN pnpm prune --production
 # Get ready for production
 FROM ghcr.io/hazmi35/node:20-alpine
 
-LABEL name "katheryne"
-LABEL maintainer "Zen <zen@clytage.org>"
+LABEL name "template"
+LABEL maintainer "Clytage <admin@clytage.org>"
 
 # Copy needed files
 COPY --from=build-stage /tmp/build/package.json .
