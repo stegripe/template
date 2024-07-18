@@ -7,7 +7,7 @@
     "scripts": {
         "build": "npm run lint && npm run compile",
         "compile": "tsc --build tsconfig.json",
-        "lint": "eslint . --ignore-path .gitignore --ext .ts",
+        "lint": "eslint . --ignore-pattern .gitignore",
         "lint:fix": "npm run lint -- --fix",
         "start": "node --es-module-specifier-resolution=node .",
         "start:dev": "rimraf ./dist && npm run compile && npm start"
@@ -26,16 +26,10 @@
         "node": ">=16.6.0",
         "npm": ">=7.0.0"
     },
-    "eslintConfig": {
-        "extends": "@clytage/eslint-config/typescript",
-        "ignorePatterns": "dist/*"
-    },
     "devDependencies": {
-        "@clytage/eslint-config": "^3.0.1",
+        "@stegripe/eslint-config": "^1.0.0",
         "@types/node": "^20.14.11",
-        "@typescript-eslint/eslint-plugin": "^7.16.1",
-        "@typescript-eslint/parser": "^7.16.1",
-        "eslint": "^8.57.0",
+        "eslint": "^9.6.0",
         "rimraf": "^6.0.1",
         "typescript": "^5.5.3"
     }
