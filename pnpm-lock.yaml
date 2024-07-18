@@ -15,7 +15,7 @@ importers:
         specifier: ^20.14.11
         version: 20.14.11
       eslint:
-        specifier: ^9.6.0
+        specifier: ^9.7.0
         version: 9.7.0
       rimraf:
         specifier: ^6.0.1
