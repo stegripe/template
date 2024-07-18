@@ -2,6 +2,16 @@
     "name": "template",
     "version": "1.0.0",
     "description": "A template to generate well-configured project base for Stegripe.",
+    "license": "AGPL-3.0",
+    "author": "Stegripe <admin@stegripe.org>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/stegripe/template.git"
+    },
+    "bugs": {
+        "url": "https://github.com/stegripe/template/issues"
+    },
+    "homepage": "https://github.com/stegripe/template#readme",
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
@@ -12,16 +22,6 @@
         "start": "node --es-module-specifier-resolution=node .",
         "start:dev": "rimraf ./dist && npm run compile && npm start"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/stegripe/template.git"
-    },
-    "author": "Stegripe <admin@stegripe.org>",
-    "license": "AGPL-3.0",
-    "bugs": {
-        "url": "https://github.com/stegripe/template/issues"
-    },
-    "homepage": "https://github.com/stegripe/template#readme",
     "engines": {
         "node": ">=16.6.0",
         "npm": ">=7.0.0"
