@@ -76,4 +76,4 @@ const hey = [
     33
 ];
 
-console.log(hey.map(x => String.fromCharCode(x)).join(""));
+console.log(hey.map(x => String.fromCodePoint(x)).join(""));
