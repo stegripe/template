@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "description": "A template to generate well-configured project base for Stegripe.",
     "license": "AGPL-3.0",
-    "author": "Stegripe <admin@stegripe.org>",
+    "author": "Stegripe Development <support@stegripe.org>",
     "repository": {
         "type": "git",
         "url": "git+https://github.com/stegripe/template.git"

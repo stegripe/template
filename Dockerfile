@@ -25,7 +25,7 @@ RUN pnpm prune --production
 FROM ghcr.io/hazmi35/node:21-alpine
 
 LABEL name "template"
-LABEL maintainer "Stegripe <admin@stegripe.org>"
+LABEL maintainer "Stegripe Development <support@stegripe.org>"
 
 # Copy needed files
 COPY --from=build-stage /tmp/build/package.json .
