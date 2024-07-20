@@ -27,7 +27,7 @@
         "npm": ">=7.0.0"
     },
     "devDependencies": {
-        "@stegripe/eslint-config": "^1.0.0",
+        "@stegripe/eslint-config": "^1.0.1",
         "@types/node": "^20.14.11",
         "eslint": "^9.7.0",
         "rimraf": "^6.0.1",
