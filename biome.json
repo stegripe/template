@@ -1,0 +1,3 @@
+{
+    "extends": ["@stegripe/biomejs-config"]
+}
