@@ -6,7 +6,7 @@ x-common-general: &common-general
         memory: 512M
 
 services:
-  sate:
+  template:
     <<: *common-general
     image: ghcr.io/stegripe/template:latest-dev
     container_name: template
