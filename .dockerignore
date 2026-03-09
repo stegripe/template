@@ -1,0 +1,47 @@
+# Version control
+.gitignore
+.gitattributes
+.github/
+
+# CI/CD & Docker meta
+Dockerfile
+docker-compose.yaml
+.dockerignore
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Documentation
+README.md
+LICENSE
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Dependencies (re-installed in container)
+node_modules/
+
+# Build output (re-built in container)
+dist/
+
+# Persistent data (mounted as volume)
+data/
+
+# Node version managers
+.node-version
+.nvmrc
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# OS artifacts
+.DS_Store
+Thumbs.db

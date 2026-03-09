@@ -15,15 +15,14 @@
     "main": "dist/index.js",
     "type": "module",
     "scripts": {
-        "build": "npm run lint && npm run compile",
-        "compile": "tsc --build tsconfig.json",
+        "build": "pnpm lint && rimraf dist && tsc --build tsconfig.json",
         "lint": "biome check .",
         "lint:fix": "biome check --write .",
-        "start": "node --es-module-specifier-resolution=node .",
-        "start:dev": "rimraf ./dist && npm run compile && npm start"
+        "start": "node .",
+        "dev": "pnpm build && pnpm start"
     },
     "engines": {
-        "node": ">=16.6.0",
+        "node": ">=20.0.0",
         "npm": ">=7.0.0"
     },
     "devDependencies": {

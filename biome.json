@@ -1,3 +1,39 @@
 {
-    "extends": ["@stegripe/biomejs-config"]
+    "extends": ["@stegripe/biomejs-config"],
+    "vcs": {
+        "enabled": true,
+        "clientKind": "git",
+        "useIgnoreFile": false
+    },
+    "files": {
+        "includes": ["src/**/*.ts", "*.json"]
+    },
+    "formatter": {
+        "indentStyle": "space",
+        "indentWidth": 4
+    },
+    "javascript": {
+        "formatter": {
+            "quoteStyle": "double"
+        }
+    },
+    "linter": {
+        "rules": {
+            "correctness": {
+                "noNodejsModules": "off"
+            },
+            "style": {
+                "useNamingConvention": "off",
+                "noInferrableTypes": "off",
+                "useFilenamingConvention": "off"
+            },
+            "suspicious": {
+                "noExplicitAny": "off",
+                "useAwait": "off"
+            },
+            "nursery": {
+                "useExplicitType": "off"
+            }
+        }
+    }
 }
