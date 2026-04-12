@@ -10,5 +10,5 @@ on:
 
 jobs:
   test:
-    uses: stegripe/workflows/.github/workflows/pnpm-lint-and-test.yaml@main
+    uses: stegripe/workflows/.github/workflows/pnpm-lint-and-test.yaml@70f2b51880ed314ac9a98c2cd2de6582668c4a9a # main
     secrets: inherit
