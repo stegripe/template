@@ -11,4 +11,4 @@ on:
 
 jobs:
   build:
-    uses: stegripe/workflows/.github/workflows/pnpm-lint-and-compile.yaml # main
+    uses: stegripe/workflows/.github/workflows/pnpm-lint-and-compile.yaml@main # main
