@@ -14,6 +14,7 @@
         "importHelpers": true,
         "resolveJsonModule": true,
         "outDir": "dist",
+        "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
         "typeRoots": ["node_modules/@types", "src/typings"]
     },
     "include": ["src/**/*"],
