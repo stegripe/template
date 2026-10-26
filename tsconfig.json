@@ -16,7 +16,8 @@
         "outDir": "dist",
         "rootDir": "src",
         "tsBuildInfoFile": "./node_modules/.cache/tsconfig.tsbuildinfo",
-        "typeRoots": ["node_modules/@types", "src/typings"]
+        "typeRoots": ["node_modules/@types", "src/typings"],
+        "types": ["node"]
     },
     "include": ["src/**/*"],
     "exclude": []

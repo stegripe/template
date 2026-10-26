@@ -2,6 +2,8 @@ FROM node:24-alpine AS build-stage
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
+ENV PNPM_CONFIG_MINIMUM_RELEASE_AGE=0
+
 WORKDIR /tmp/build
 
 COPY package.json pnpm-lock.yaml .npmrc* ./
