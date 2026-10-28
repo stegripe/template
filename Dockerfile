@@ -1,4 +1,4 @@
-FROM node:24-alpine AS build-stage
+FROM node:26-alpine AS build-stage
 
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
@@ -16,7 +16,7 @@ ARG COMMIT_SHA
 RUN pnpm build
 RUN pnpm prune --production
 
-FROM node:24-alpine
+FROM node:26-alpine
 
 ARG COMMIT_SHA
 LABEL name="template"
