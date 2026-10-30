@@ -26,7 +26,7 @@
         "npm": ">=7.0.0"
     },
     "devDependencies": {
-        "@biomejs/biome": "^2.6.3",
+        "@biomejs/biome": "^2.6.4",
         "@stegripe/biomejs-config": "^1.1.0",
         "@types/node": "^24.19.2",
         "rimraf": "^6.1.3",
